@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26-Jan-2014 21:44:44 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="FinancialAgent.DJIAActualDataSet" table="DJIAActualDataSet">  
+    
+        <id name="runId" type="int" access="field">
+            <column name="RUNID" />
+            <generator class="assigned" />
+        </id>
+        <property name="startDate" type="java.lang.String">
+            <column name="DATE" />
+        </property>
+        <property name="closingPrice" type="double">
+            <column name="CLOSE" />
+        </property>
+        <property name="predictionSize" type="int" access="field">
+            <column name="PREDICTIONSIZE" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26-Jan-2014 21:44:44 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="FinancialAgent.DJIADataSet" table="DJIADataSet">
+        <id name="Id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+        <property name="closePrice" type="double">
+            <column name="CLOSE" />
+        </property>
+        <property name="missing" type="int">
+            <column name="MISSING" />
+        </property>
+    </class>
+</hibernate-mapping>

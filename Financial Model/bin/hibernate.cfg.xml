@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">admin</property> 
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.1.93/FinancialModeling</property>
+        <property name="hibernate.connection.username">admin</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping resource="DJIADataSet.hbm.xml"/>
+        <mapping resource="DJIAActualDataSet.hbm.xml"/>
+        <mapping resource="AgentRiskRewardDataSet.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
